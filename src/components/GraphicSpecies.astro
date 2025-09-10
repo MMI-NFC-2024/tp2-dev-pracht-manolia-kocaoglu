@@ -9,7 +9,6 @@ const { species } = Astro.props;
 const filteredPenguins = penguins.filter((p) => p.species === species);
 ---
 
-<Layout>
     <h1 class="text-2xl m-2 font-bold">Graphique avec les penguins {species}</h1>
     <PlotFigure
         options={{
@@ -22,4 +21,3 @@ const filteredPenguins = penguins.filter((p) => p.species === species);
             ],
         }}
     />
-</Layout>
